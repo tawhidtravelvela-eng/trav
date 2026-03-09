@@ -1,0 +1,79 @@
+project_id = "myrzsmjlofmurxftbegi"
+
+[functions.travelvela-search]
+verify_jwt = false
+
+[functions.amadeus-search]
+verify_jwt = false
+
+[functions.travelport-search]
+verify_jwt = false
+
+[functions.travelport-price]
+verify_jwt = false
+
+[functions.travelport-book]
+verify_jwt = false
+
+[functions.travelport-fare-rules]
+verify_jwt = false
+
+[functions.travelport-seatmap]
+verify_jwt = false
+
+[functions.travelport-ancillaries]
+verify_jwt = false
+
+[functions.travelport-queue]
+verify_jwt = false
+
+[functions.amadeus-hotel-search]
+verify_jwt = false
+
+[functions.travelvela-book]
+verify_jwt = false
+
+[functions.tripjack-hotel-search]
+verify_jwt = false
+
+[functions.tripjack-hotel-book]
+verify_jwt = false
+
+[functions.tripjack-search]
+verify_jwt = false
+
+[functions.tripjack-book]
+verify_jwt = false
+
+[functions.tripjack-review]
+verify_jwt = false
+
+[functions.tripjack-fare-rules]
+verify_jwt = false
+
+[functions.travelvela-hotel-search]
+verify_jwt = false
+
+[functions.travelvela-hotel-book]
+verify_jwt = false
+
+[functions.unified-flight-search]
+verify_jwt = false
+
+[functions.import-tripjack-data]
+verify_jwt = false
+
+[functions.agoda-hotel-search]
+verify_jwt = false
+
+[functions.viator-search]
+verify_jwt = false
+
+[functions.unified-hotel-search]
+verify_jwt = false
+
+[functions.bkash-payment]
+verify_jwt = false
+
+[functions.wallet-deposit]
+verify_jwt = false

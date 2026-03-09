@@ -1,0 +1,2 @@
+DROP POLICY "Service role can manage tripjack cities" ON public.tripjack_cities;
+CREATE POLICY "Only service role can manage tripjack cities" ON public.tripjack_cities FOR ALL USING (auth.role() = 'service_role') WITH CHECK (auth.role() = 'service_role');

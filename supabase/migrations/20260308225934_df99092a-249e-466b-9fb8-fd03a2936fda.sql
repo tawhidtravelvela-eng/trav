@@ -1,0 +1,1 @@
+INSERT INTO public.api_settings (provider, is_active, settings) VALUES ('agoda_hotel', true, '{"cityMapping": {}}') ON CONFLICT DO NOTHING;

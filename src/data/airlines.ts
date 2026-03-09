@@ -1,0 +1,36 @@
+export const AIRLINE_NAMES: Record<string, string> = {
+  EK: "Emirates", QR: "Qatar Airways", EY: "Etihad Airways", SV: "Saudia",
+  GF: "Gulf Air", WY: "Oman Air", RJ: "Royal Jordanian", ME: "Middle East Airlines",
+  AA: "American Airlines", DL: "Delta Air Lines", UA: "United Airlines",
+  WN: "Southwest Airlines", B6: "JetBlue Airways", AS: "Alaska Airlines",
+  NK: "Spirit Airlines", F9: "Frontier Airlines", HA: "Hawaiian Airlines",
+  AC: "Air Canada", WS: "WestJet", AM: "Aeromexico",
+  BA: "British Airways", LH: "Lufthansa", AF: "Air France", KL: "KLM",
+  IB: "Iberia", AZ: "ITA Airways", SK: "SAS", AY: "Finnair",
+  LX: "Swiss International", OS: "Austrian Airlines", SN: "Brussels Airlines",
+  LO: "LOT Polish Airlines", OK: "Czech Airlines", RO: "TAROM",
+  TP: "TAP Air Portugal", EI: "Aer Lingus", FR: "Ryanair", U2: "easyJet",
+  W6: "Wizz Air", VY: "Vueling", PC: "Pegasus Airlines", TK: "Turkish Airlines",
+  SQ: "Singapore Airlines", CX: "Cathay Pacific", JL: "Japan Airlines",
+  NH: "ANA", QF: "Qantas", MH: "Malaysia Airlines", TG: "Thai Airways",
+  GA: "Garuda Indonesia", PR: "Philippine Airlines", VN: "Vietnam Airlines",
+  KE: "Korean Air", OZ: "Asiana Airlines", BR: "EVA Air", CI: "China Airlines",
+  CA: "Air China", MU: "China Eastern", CZ: "China Southern", HU: "Hainan Airlines",
+  "3U": "Sichuan Airlines", FM: "Shanghai Airlines", ZH: "Shenzhen Airlines",
+  AI: "Air India", "6E": "IndiGo", SG: "SpiceJet", UK: "Vistara",
+  BG: "Biman Bangladesh", BS: "US-Bangla Airlines", VQ: "Novoair",
+  UL: "SriLankan Airlines", BI: "Royal Brunei", PK: "PIA",
+  FZ: "flydubai", G9: "Air Arabia", WF: "Widerøe",
+  ET: "Ethiopian Airlines", SA: "South African Airways", KQ: "Kenya Airways",
+  MS: "EgyptAir", AT: "Royal Air Maroc", RK: "Air Afrique",
+  LA: "LATAM Airlines", AV: "Avianca", G3: "Gol Linhas Aéreas",
+  CM: "Copa Airlines", AR: "Aerolíneas Argentinas",
+  QZ: "AirAsia Indonesia", AK: "AirAsia", FD: "Thai AirAsia",
+  D7: "AirAsia X", TR: "Scoot", "3K": "Jetstar Asia", JQ: "Jetstar",
+  TW: "T'way Air", LJ: "Jin Air", ZE: "Eastar Jet", "7C": "Jeju Air",
+  MM: "Peach Aviation", BC: "Skymark Airlines",
+};
+
+export function getAirlineName(code: string): string {
+  return AIRLINE_NAMES[code] || code;
+}

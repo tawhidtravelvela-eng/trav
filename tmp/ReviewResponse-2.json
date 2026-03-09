@@ -1,0 +1,416 @@
+{
+    "tripInfos": [
+        {
+            "sI": [
+                {
+                    "id": "971",
+                    "fD": {
+                        "aI": {
+                            "code": "AI",
+                            "name": "Air India",
+                            "isLcc": false
+                        },
+                        "fN": "570",
+                        "eT": "32N"
+                    },
+                    "stops": 0,
+                    "so": [],
+                    "duration": 125,
+                    "da": {
+                        "code": "BOM",
+                        "name": "Chhatrapati Shivaji",
+                        "cityCode": "BOM",
+                        "city": "Mumbai",
+                        "country": "India",
+                        "countryCode": "IN",
+                        "terminal": "Terminal 2"
+                    },
+                    "aa": {
+                        "code": "MAA",
+                        "name": "Chennai Arpt",
+                        "cityCode": "MAA",
+                        "city": "Chennai",
+                        "country": "India",
+                        "countryCode": "IN",
+                        "terminal": "Terminal 4"
+                    },
+                    "dt": "2024-07-25T05:15",
+                    "at": "2024-07-25T07:20",
+                    "iand": false,
+                    "isRs": false,
+                    "sN": 0,
+                    "ssrInfo": {
+                        "MEAL": [
+                            {
+                                "code": "VGML",
+                                "amount": 0.00,
+                                "desc": "Vegan Veg Meal"
+                            },
+                            {
+                                "code": "AVML",
+                                "amount": 0.00,
+                                "desc": "Hindu Veg Meal"
+                            },
+                            {
+                                "code": "VJML",
+                                "amount": 0.00,
+                                "desc": "Jain Veg Meal"
+                            },
+                            {
+                                "code": "VLML",
+                                "amount": 0.00,
+                                "desc": "Lacto-Ovo Veg Meal"
+                            },
+                            {
+                                "code": "FPML",
+                                "amount": 0.00,
+                                "desc": "Fruit Platter Meal"
+                            },
+                            {
+                                "code": "NVML",
+                                "amount": 0.00,
+                                "desc": "Non-Veg Meal"
+                            },
+                            {
+                                "code": "MOML",
+                                "amount": 0.00,
+                                "desc": "Moslem Meal"
+                            },
+                            {
+                                "code": "HNML",
+                                "amount": 0.00,
+                                "desc": "Hindu Non-Veg Meal"
+                            },
+                            {
+                                "code": "SFML",
+                                "amount": 0.00,
+                                "desc": "Sea Food Meal"
+                            },
+                            {
+                                "code": "DBML",
+                                "amount": 0.00,
+                                "desc": "Diabetic Meal"
+                            },
+                            {
+                                "code": "NLML",
+                                "amount": 0.00,
+                                "desc": "Low Lactose Meal"
+                            },
+                            {
+                                "code": "CHML",
+                                "amount": 0.00,
+                                "desc": "Child Meal"
+                            },
+                            {
+                                "code": "BBML",
+                                "amount": 0.00,
+                                "desc": "Baby Meal"
+                            },
+                            {
+                                "code": "BLML",
+                                "amount": 0.00,
+                                "desc": "Bland Meal"
+                            },
+                            {
+                                "code": "GFML",
+                                "amount": 0.00,
+                                "desc": "Gluten Intolerant Meal"
+                            },
+                            {
+                                "code": "KSML",
+                                "amount": 0.00,
+                                "desc": "Kosher Meal"
+                            },
+                            {
+                                "code": "LCML",
+                                "amount": 0.00,
+                                "desc": "Low Calorie Meal"
+                            },
+                            {
+                                "code": "LFML",
+                                "amount": 0.00,
+                                "desc": "Low Fat Meal"
+                            },
+                            {
+                                "code": "LSML",
+                                "amount": 0.00,
+                                "desc": "ow Salt Meal"
+                            },
+                            {
+                                "code": "RVML",
+                                "amount": 0.00,
+                                "desc": "Vegetarian Raw Meal"
+                            },
+                            {
+                                "code": "VOML",
+                                "amount": 0.00,
+                                "desc": "Vegetarian Oriental Meal"
+                            },
+                            {
+                                "code": "SPML",
+                                "amount": 0.00,
+                                "desc": "Special Meal"
+                            },
+                            {
+                                "code": "PFML",
+                                "amount": 0.00,
+                                "desc": "Peanut Free Meal"
+                            },
+                            {
+                                "code": "ORML",
+                                "amount": 0.00,
+                                "desc": "Oriental Meal"
+                            },
+                            {
+                                "code": "NSML",
+                                "amount": 0.00,
+                                "desc": "No Salt Meal"
+                            },
+                            {
+                                "code": "PRML",
+                                "amount": 0.00,
+                                "desc": "Low Purine Meal"
+                            },
+                            {
+                                "code": "LPML",
+                                "amount": 0.00,
+                                "desc": "Low Protein Meal"
+                            },
+                            {
+                                "code": "HFML",
+                                "amount": 0.00,
+                                "desc": "High Fiber Meal"
+                            },
+                            {
+                                "code": "NFML",
+                                "amount": 0.00,
+                                "desc": "No Fish Meal"
+                            }
+                        ]
+                    },
+                    "ac": []
+                }
+            ],
+            "totalPriceList": [
+                {
+                    "fd": {
+                        "INFANT": {
+                            "fC": {
+                                "TAF": 254.00,
+                                "BF": 1500.00,
+                                "NF": 1754.00,
+                                "TF": 1754.00
+                            },
+                            "afC": {
+                                "TAF": {
+                                    "AGST": 84.00,
+                                    "YR": 170.00
+                                }
+                            },
+                            "sR": 9,
+                            "bI": {
+                                "iB": "10 Kg (01 Piece only)",
+                                "cB": "7 Kg"
+                            },
+                            "rT": 1,
+                            "cc": "ECONOMY",
+                            "cB": "T",
+                            "fB": "TIPIN",
+                            "mI": true
+                        },
+                        "ADULT": {
+                            "fC": {
+                                "TAF": 755.00,
+                                "BF": 4440.00,
+                                "NF": 5195.00,
+                                "TF": 5195.00
+                            },
+                            "afC": {
+                                "TAF": {
+                                    "AGST": 231.00,
+                                    "OT": 354.00,
+                                    "YR": 170.00
+                                }
+                            },
+                            "sR": 9,
+                            "bI": {
+                                "iB": "25 Kg (01 Piece only)",
+                                "cB": "7 Kg"
+                            },
+                            "rT": 1,
+                            "cc": "ECONOMY",
+                            "cB": "T",
+                            "fB": "TIP",
+                            "mI": true
+                        },
+                        "CHILD": {
+                            "fC": {
+                                "TAF": 733.00,
+                                "BF": 3996.00,
+                                "NF": 4729.00,
+                                "TF": 4729.00
+                            },
+                            "afC": {
+                                "TAF": {
+                                    "AGST": 209.00,
+                                    "OT": 354.00,
+                                    "YR": 170.00
+                                }
+                            },
+                            "sR": 9,
+                            "bI": {
+                                "iB": "25 Kg (01 Piece only)",
+                                "cB": "7 Kg"
+                            },
+                            "rT": 1,
+                            "cc": "ECONOMY",
+                            "cB": "T",
+                            "fB": "TIP",
+                            "mI": true
+                        }
+                    },
+                    "fareIdentifier": "PUBLISHED",
+                    "id": "R2-10-1327702419_0BOMMAAAI570~7815994873742148",
+                    "messages": [],
+                    "pc": {
+                        "code": "AI",
+                        "name": "Air India",
+                        "isLcc": false
+                    },
+                    "fareRuleInformation": {
+                        "fr": {},
+                        "tfr": {
+                            "NO_SHOW": [
+                                {
+                                    "policyInfo": "Non refundable (Only statutory taxes will be refunded)",
+                                    "st": "0",
+                                    "et": "8760"
+                                }
+                            ],
+                            "DATECHANGE": [
+                                {
+                                    "amount": 3000.00,
+                                    "policyInfo": "__nls__Changes permitted 25 Hrs before scheduled departure__nls__Change Penalty : INR 3,000/- or basic fare whichever is lower + Fare Difference",
+                                    "fcs": {
+                                        "ARF": 3000.00,
+                                        "ARFT": 0.00
+                                    },
+                                    "st": "4",
+                                    "et": "8760"
+                                }
+                            ],
+                            "CANCELLATION": [
+                                {
+                                    "amount": 3000.00,
+                                    "policyInfo": "__nls__Cancellation permitted 25 Hrs before scheduled departure__nls__Cancellation Penalty : INR 3,000/- or basic fare whichever is lower",
+                                    "fcs": {
+                                        "ACFT": 0.00,
+                                        "ACF": 3000.00
+                                    },
+                                    "st": "4",
+                                    "et": "8760"
+                                }
+                            ],
+                            "SEAT_CHARGEABLE": [
+                                {
+                                    "policyInfo": "",
+                                    "st": "0",
+                                    "et": "8760"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "searchQuery": {
+        "routeInfos": [
+            {
+                "fromCityOrAirport": {
+                    "code": "BOM",
+                    "name": "Chhatrapati Shivaji",
+                    "cityCode": "BOM",
+                    "city": "Mumbai",
+                    "country": "India",
+                    "countryCode": "IN"
+                },
+                "toCityOrAirport": {
+                    "code": "MAA",
+                    "name": "Chennai Arpt",
+                    "cityCode": "MAA",
+                    "city": "Chennai",
+                    "country": "India",
+                    "countryCode": "IN"
+                },
+                "travelDate": "2024-07-25"
+            }
+        ],
+        "cabinClass": "ECONOMY",
+        "paxInfo": {
+            "ADULT": 5,
+            "CHILD": 4,
+            "INFANT": 3
+        },
+        "requestId": "1327702419",
+        "searchType": "ONEWAY",
+        "searchModifiers": {
+            "isDirectFlight": true,
+            "isConnectingFlight": false,
+            "pft": "REGULAR",
+            "pfts": [
+                "REGULAR"
+            ]
+        },
+        "isDomestic": true
+    },
+    "bookingId": "TJS104301009537",
+    "totalPriceInfo": {
+        "totalFareDetail": {
+            "fC": {
+                "TAF": 7469.00,
+                "BF": 42684.00,
+                "NF": 50153.00,
+                "TF": 50153.00
+            },
+            "afC": {
+                "TAF": {
+                    "AGST": 2243.00,
+                    "OT": 3186.00,
+                    "YR": 2040.00
+                }
+            }
+        }
+    },
+    "status": {
+        "success": true,
+        "httpStatus": 200
+    },
+    "conditions": {
+        "ffas": [
+            "AI"
+        ],
+        "isa": false,
+        "dob": {
+            "adobr": false,
+            "cdobr": false,
+            "idobr": true
+        },
+        "iecr": false,
+        "dc": {
+            "ida": false,
+            "idm": false
+        },
+        "ipa": false,
+        "addOns": {
+            "isbpa": false
+        },
+        "isBA": true,
+        "st": 900,
+        "sct": "2024-07-19T12:49:40.895",
+        "gst": {
+            "gstappl": true,
+            "igm": false
+        }
+    }
+}

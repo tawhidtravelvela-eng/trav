@@ -1,0 +1,1 @@
+CREATE POLICY "Api settings are publicly readable" ON api_settings FOR SELECT USING (true);

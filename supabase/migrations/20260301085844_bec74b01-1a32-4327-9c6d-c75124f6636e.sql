@@ -1,0 +1,1 @@
+ALTER TABLE public.api_settings ADD CONSTRAINT api_settings_provider_unique UNIQUE (provider);

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 209 40% 98%;
+    --foreground: 213 60% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 60% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 60% 10%;
+
+    --primary: 205 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 205 100% 95%;
+    --secondary-foreground: 205 100% 21%;
+
+    --muted: 207 30% 95%;
+    --muted-foreground: 207 30% 47%;
+
+    --accent: 18 100% 59%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 1 76% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 207 45% 88%;
+    --input: 207 45% 88%;
+    --ring: 205 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 205 100% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 207 30% 95%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 207 45% 88%;
+    --sidebar-ring: 205 100% 50%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(205 100% 50%), hsl(205 100% 35%));
+    --card-shadow: 0 1px 3px 0 hsl(205 100% 50% / 0.06), 0 1px 2px -1px hsl(205 100% 50% / 0.06);
+    --card-shadow-hover: 0 20px 40px -12px hsl(205 100% 50% / 0.18), 0 0 0 1px hsl(205 100% 50% / 0.05);
+    --shadow-glow: 0 0 40px -8px hsl(205 100% 50% / 0.25);
+    --success: 152 70% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 213 60% 8%;
+    --foreground: 207 30% 95%;
+    --card: 213 50% 12%;
+    --card-foreground: 207 30% 95%;
+    --popover: 213 50% 12%;
+    --popover-foreground: 207 30% 95%;
+    --primary: 205 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 213 50% 18%;
+    --secondary-foreground: 207 30% 90%;
+    --muted: 213 50% 18%;
+    --muted-foreground: 207 20% 60%;
+    --accent: 18 100% 59%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 213 50% 20%;
+    --input: 213 50% 20%;
+    --ring: 205 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(205 100% 50%), hsl(18 100% 59%));
+  }
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, hsl(205 100% 50%), hsl(205 100% 30%));
+  }
+  .card-hover {
+    @apply transition-all duration-300;
+    box-shadow: var(--card-shadow);
+  }
+  .card-hover:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateY(-6px);
+  }
+  .glass {
+    background: hsl(0 0% 100% / 0.08);
+    backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.12);
+  }
+  .glass-light {
+    background: hsl(0 0% 100% / 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid hsl(0 0% 100% / 0.5);
+  }
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      110deg,
+      transparent 25%,
+      hsl(0 0% 100% / 0.1) 50%,
+      transparent 75%
+    );
+    animation: shimmer 3s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  .section-divider {
+    @apply relative;
+  }
+  .section-divider::before {
+    content: '';
+    @apply absolute top-0 left-1/2 -translate-x-1/2 w-16 h-1 rounded-full;
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--accent)));
+  }
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Calendar dropdown styling */
+.rdp-dropdown_month select,
+.rdp-dropdown_year select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.5rem;
+  padding: 0.3rem 1.75rem 0.3rem 0.625rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.4rem center;
+  background-size: 11px;
+  box-shadow: 0 1px 2px hsl(var(--foreground) / 0.04);
+}
+.rdp-dropdown_month select:hover,
+.rdp-dropdown_year select:hover {
+  border-color: hsl(var(--primary) / 0.5);
+  background-color: hsl(var(--primary) / 0.03);
+}
+.rdp-dropdown_month select:focus,
+.rdp-dropdown_year select:focus {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+}
+.rdp-caption_dropdowns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+/* Hide the duplicate caption label when dropdowns are visible */
+.rdp-caption_dropdowns + .rdp-caption_label {
+  display: none !important;
+}

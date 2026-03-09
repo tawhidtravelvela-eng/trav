@@ -1,0 +1,1 @@
+UPDATE api_settings SET is_active = true, updated_at = now() WHERE provider = 'travelvela';
